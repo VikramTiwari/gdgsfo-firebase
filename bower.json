@@ -1,0 +1,28 @@
+{
+  "name": "gdgsfo-firebase",
+  "version": "0.0.1",
+  "homepage": "https://github.com/VikramTiwari/gdgsfo-firebase",
+  "authors": [
+    "Vikram Tiwari <vikramtheone1@gmail.com>"
+  ],
+  "description": "something using firebase",
+  "main": "index.html",
+  "keywords": [
+    "firebase",
+    "gdg",
+    "sfo"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "firebase": "~2.2.5",
+    "angularfire": "~1.1.1",
+    "angular": "~1.3.15"
+  }
+}

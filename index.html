@@ -1,0 +1,33 @@
+<html ng-app="sampleApp">
+<head>
+  <title>gdg sfo</title>
+  <!-- AngularJS -->
+  <script src="bower_components/angular/angular.js"></script>
+
+  <!-- Firebase -->
+  <script src="bower_components/firebase/firebase.js"></script>
+
+  <!-- AngularFire -->
+  <script src="bower_components/angularfire/dist/angularfire.js"></script>
+  <script src="app.js"></script>
+</head>
+<body ng-controller="SampleCtrl">
+  You are: {{user}}
+  <hr>
+  <ul>
+    <li ng-repeat="message in messages">
+      <!-- edit a message -->
+      <input ng-model="message.text" ng-change="messages.$save(message)" />
+
+      <!-- delete a message -->
+      <button ng-click="messages.$remove(message)">Delete Message</button>
+    </li>
+  </ul>
+
+  <!-- push a new message onto the array -->
+  <form ng-submit="addMessage()">
+    <input ng-model="newMessageText" />
+    <button type="submit">Add Message</button>
+  </form>
+</body>
+</html>
